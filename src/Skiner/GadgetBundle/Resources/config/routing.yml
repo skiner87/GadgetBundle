@@ -1,0 +1,3 @@
+gadget_homepage:
+    path:     /
+    defaults: { _controller: GadgetBundle:Default:index }
