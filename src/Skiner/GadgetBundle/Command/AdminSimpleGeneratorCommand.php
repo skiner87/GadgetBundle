@@ -4,7 +4,7 @@
  * Time: 19:34
  */
 
-namespace System\SystemBundle\Command;
+namespace Skiner\GadgetBundle\Command;
 
 use Propel\Runtime\Map\TableMap;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
@@ -33,8 +33,6 @@ class AdminSimpleGeneratorCommand extends ContainerAwareCommand
 		$this
 			->setName('admin:generator')
 			->setDefinition([
-//				new InputOption(self::OPTION_OUTPUT_FORMAT, null, InputOption::VALUE_OPTIONAL, 'Override the default output format', 'yml'),
-//				new InputOption(self::OPTION_ALL_LOCALES, null, InputOption::VALUE_NONE, 'Use all locales to dumping'),
 				new InputOption(self::OPTION_MODEL, null, InputOption::VALUE_OPTIONAL, 'Provide Model namespace to generate')
 			])
 		;
